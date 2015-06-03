@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- Code by Scott Smith
+  _____
+ / ___ \
+/ /   \_\                               _         _
+| |                                    | |       | |
+\ \____       _____        _____     __| |__   __| |__
+ \____ \     / ___ \      / ___ \   |__   __| |__   __|
+      \ \   / /   \_\    / /   \ \     | |       | |
+      | |  | |          | |     | |    | |       | |
+__    / /  | |     __   | |     | |    | |       | |
+\ \__/ /    \ \___/ /    \ \___/ /     | |       | |
+ \____/      \_____/      \_____/      |_|       |_|
+
+-->
+<html lang="en" class="no-js">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+{{! Page Meta }}
+<title>{{meta_title}}</title>
+<meta name="description" content="{{meta_description}}">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+<!-- Icons -->
+<link rel="icon" href="https://scotthsmith.com/images/icon.png">
+<link rel="apple-touch-icon-precomposed" href="https://scotthsmith.com/images/ScottPic.jpg">
+<meta name="msapplication-TileColor" content="#ECEEF0">
+<meta name="msapplication-TileImage" content="https://scotthsmith.com/images/icon.png">
+
+<!-- CSS -->
+<link rel="stylesheet" href="{{asset "styles/build/portfolio.css"}}">
+
+</head>
+
+<body class="{{body_class}}">
+	
+	<header>
+		<h1><a class="nav" href="https://scotthsmith.com/">Scott</a><span class="divider"> &#124; </span>{{#is "index"}}Portfolio{{else}}<a href="{{@blog.url}}">Portfolio</a>{{/is}}</h1>
+    	<div class="hire"><p>I am involved in several projects right now, but I'd still love to hear about what you are working on. Feel free to contact me through any means available on my <a href="/">front page</a>.</p></div>
+	</header>
+	
+	{{! Everything else gets inserted here }}
+	{{{body}}}
+
+{{! Ghost outputs important scripts and data with this tag }}
+{{ghost_foot}}
+<script async type="text/javascript" src="https://scotthsmith.com/scripts/build/main.js"></script>
+{{#is "index"}}<script async type="text/javascript" src="{{asset "/scripts/build/portfolio.js"}}"></script>{{/is}}
+
+</body>
+
+</html>

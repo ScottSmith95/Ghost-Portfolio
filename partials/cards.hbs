@@ -1,0 +1,11 @@
+{{! Each post will be output using this markup }}
+{{#foreach posts}}
+
+<article class="{{post_class}} item-expand-area">
+	<div class="item">
+		{{#if image}}<div class="photo"><a href="{{url}}"><img class="post-image" src="{{image absolute="true"}}"></a></div>{{/if}}
+		<div class="caption"><p>{{excerpt}}</p></div>
+	</div>
+</article>
+
+{{/foreach}}
