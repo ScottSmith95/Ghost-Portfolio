@@ -6,7 +6,7 @@ var gulp       = require('gulp'),
 
 var paths = {
 	styles: 'assets/styles/*.css',
-	portfolioScripts: ['node_modules/imagesloaded/imagesloaded.pkgd.js', 'node_modules/masonry-layout/dist/masonry.pkgd.js', 'assets/scripts/portfolio.js'],
+	scripts: ['node_modules/imagesloaded/imagesloaded.pkgd.js', 'node_modules/masonry-layout/dist/masonry.pkgd.js', 'assets/scripts/portfolio.js'],
 };
 
 gulp.task('styles', function() {
@@ -26,7 +26,7 @@ gulp.task('styles', function() {
 });
 
 gulp.task('scripts', function() {
-	return gulp.src(paths.portfolioScripts)
+	return gulp.src(paths.scripts)
 		.pipe(sourcemaps.init())
 			.pipe(concat('portfolio.js'))
 			.pipe(uglify())
