@@ -57,7 +57,7 @@ a {
 	border-radius: 0.35em;
 	opacity: 0;
 	color: $darkgrey;
-	background: #EEEEEE;
+	background-color: #EEEEEE;
 	box-shadow: 0 0 5px rgba(0,0,0,0.25);
 	margin: 2.5%;
 	
@@ -66,6 +66,8 @@ a {
 	}
 	
 	@media (hover) {
+	margin: 1%;
+	
 	&:hover {
 		overflow: hidden;
 		z-index: 2;
@@ -145,7 +147,7 @@ a {
 	.post {
 		overflow: hidden;
 		border-radius: 0.35em;
-		background: #EEEEEE;
+		background-color: #EEEEEE;
 		box-shadow: 0 0 5px rgba(0,0,0,0.25);
 		max-width: 92.5%;
 		margin: 2.5% auto 2em;
