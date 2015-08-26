@@ -5,12 +5,14 @@ a {
 	color: $blue;
 	text-decoration: none;
 	
-	.no-touch &:hover {
+	@media (hover) {
+	&:hover {
 		color: $darkblue;
 	}
 	
-	.no-touch &:active {
+	&:active {
 		color: $text-color;
+	}
 	}
 }
 
@@ -188,7 +190,7 @@ a {
 }
 
 /* Tablet */
-@media screen and (min-width: 35em) {
+@media (min-width: 35em) {
 	.site-content {
 		display: block;
 		width: 95%;
@@ -211,7 +213,7 @@ a {
 
 
 /* Desktop */
-@media screen and (min-width: 50em) {
+@media (min-width: 50em) {
 	.site-content {
 		width: 65%;
 	}
