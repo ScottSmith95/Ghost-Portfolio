@@ -31,18 +31,19 @@ a {
 
 .site-content {
 	display: flex;
-	width: 100%;
-
 	flex-flow: column nowrap;
+	width: 100%;
 }
 
-.no-touch .item-expand-area {
-	transition: transform 0.25s ease-out;
-	transform: scale(0.95);
-}
-
-.no-touch .item-expand-area:hover {
-	transform: scale(1);
+@media (hover) {
+	.item-expand-area {
+		transition: transform 0.25s ease-out;
+		transform: scale(0.95);
+	
+		&:hover {
+			transform: scale(1);
+		}
+	}
 }
 
 .item {
@@ -56,19 +57,18 @@ a {
 	color: $darkgrey;
 	background: #EEEEEE;
 	box-shadow: 0 0 5px rgba(0,0,0,0.25);
+	margin: 2.5%;
 	
 	.no-cssanimations & {
 		opacity: 1;
 	}
 	
-	.touch & {
-		margin: 2.5%;
-	}
-	
-	.no-touch &:hover {
+	@media (hover) {
+	&:hover {
 		overflow: hidden;
 		z-index: 2;
 		box-shadow: 0 0 10px rgba(0,0,0,0.25);
+	}
 	}
 }
 
@@ -103,12 +103,14 @@ a {
 	border-radius: 0.35em 0.35em 0 0;
 	opacity: 1;
 	
-	.no-touch &:hover {
+	@media (hover) {
+	&:hover {
 		opacity: 0.8;
 	}
 	
-	.no-touch &:hover {
+	&:hover {
 		opacity: 0.9;
+	}
 	}
 }
 
@@ -120,12 +122,14 @@ a {
 		margin: 4%;
 	}
 	
-	.no-touch & a:hover {
+	@media (hover) {
+	& a:hover {
 		text-shadow: 0 0 10px rgba(0,0,0,0.35);
 	}
 	
-	.no-touch & a:active {
+	& a:active {
 		text-shadow: 0 -2px 7px rgba(0,0,0,0.5);
+	}
 	}
 }
 
