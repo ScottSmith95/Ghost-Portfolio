@@ -14,7 +14,7 @@ gulp.task('styles', function() {
 		require('postcss-import'),
 		require('postcss-nested'),
 		require('postcss-simple-vars'),
-		require('css-mqpacker'),
+		require('css-mqpacker')({sort: true}),
 		require('autoprefixer-core')('last 2 versions', '> 1%', 'ie 9', 'ie 8', 'Firefox ESR'),
 		require('csswring')
     ];
