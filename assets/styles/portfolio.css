@@ -2,16 +2,16 @@
 
 a {
 	transition: text-shadow 0.35s ease-out, color 0.35s ease-out;
-	color: $blue;
+	color: var(--blue);
 	text-decoration: none;
 	
 	@media (hover) {
 	&:hover {
-		color: $darkblue;
+		color: var(--darkblue);
 	}
 	
 	&:active {
-		color: $text-color;
+		color: var(--text-color);
 	}
 	}
 }
@@ -56,7 +56,7 @@ a {
 	overflow: hidden;
 	border-radius: 0.35em;
 	opacity: 0;
-	color: $darkgrey;
+	color: var(--darkgrey);
 	background-color: #EEEEEE;
 	box-shadow: 0 0 5px rgba(0,0,0,0.25);
 	margin: 2.5%;
@@ -176,7 +176,7 @@ a {
 	padding: 1.5% 5% 1.5% 2.5%;
 	font-size: 2.5em;
 	background: linear-gradient(to top,rgba(0,0,0,.30) 0,transparent 100%);
-	color: #ECEEF0;
+	color: var(--bg-color);
 	text-shadow: -1px -1px 1px rgba(108, 108, 108, 0.4);
 }
 
