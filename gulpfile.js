@@ -6,17 +6,17 @@ var gulp       = require('gulp'),
 
 var paths = {
 	styles: 'assets/styles/*.css',
-	scripts: ['node_modules/imagesloaded/imagesloaded.pkgd.js', 'node_modules/masonry-layout/dist/masonry.pkgd.js', 'assets/scripts/portfolio.js'],
+	indexScripts: ['node_modules/imagesloaded/imagesloaded.pkgd.js', 'node_modules/masonry-layout/dist/masonry.pkgd.js', 'assets/scripts/portfolio.js'],
 };
 
 gulp.task('styles', function() {
 	var processors = [
 		require('postcss-import'),
 		require('postcss-nested'),
-		require('postcss-simple-vars'),
+		require('postcss-custom-properties'),
 		require('css-mqpacker')({sort: true}),
-		require('autoprefixer-core')('last 2 versions', '> 1%', 'ie 9', 'ie 8', 'Firefox ESR'),
-		require('csswring')
+		require('autoprefixer')('last 2 versions', '> 1%', 'ie 9', 'ie 8', 'Firefox ESR'),
+		require('cssnano')
     ];
 	return gulp.src(paths.styles)
 		.pipe(sourcemaps.init())
@@ -25,8 +25,8 @@ gulp.task('styles', function() {
 		.pipe(gulp.dest('assets/styles/build/'));
 });
 
-gulp.task('scripts', function() {
-	return gulp.src(paths.scripts)
+gulp.task('index-scripts', function() {
+	return gulp.src(paths.indexScripts)
 		.pipe(sourcemaps.init())
 			.pipe(concat('portfolio.js'))
 			.pipe(uglify())
@@ -36,12 +36,12 @@ gulp.task('scripts', function() {
 
 gulp.task('watch', function() {
 	gulp.watch(paths.styles, ['styles']);
-	gulp.watch(paths.scripts, ['scripts']);
+	gulp.watch(paths.indexScripts, ['index-scripts']);
 });
 
 // Workflows
 // $ gulp: Builds, prefixes, and minifies CSS files; concencates and minifies JS files; watches for changes. The works.
-gulp.task('default', ['styles', 'scripts', 'watch']);
+gulp.task('default', ['styles', 'index-scripts', 'watch']);
 
 // $ gulp build: Builds, prefixes, and minifies CSS files; concencates and minifies JS files. For deployments.
-gulp.task('build', ['styles', 'scripts']);
+gulp.task('build', ['styles', 'index-scripts', ]);
