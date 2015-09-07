@@ -1,16 +1,17 @@
-docReady( function() {
+document.addEventListener( "DOMContentLoaded", function() {
 	
-	var grid = document.querySelector('.site-content');
+	var elem = document.querySelector('.site-content');
 	
 	// Setup Masonry.
-	var msnry = new Masonry( grid, {
+	var msnry = new Masonry( elem, {
 		itemSelector: '.post',
 		transitionDuration: 0
 	});
 	
-	imagesLoaded( grid, function() {
+	imagesLoaded( elem ).on( 'progress', function() {
 		// Layout Masonry after each image loads.
 		msnry.layout();
 	});
 
 });
+
