@@ -130,10 +130,11 @@ a {
 .post-template {
 	.post {
 		overflow: hidden;
-		border-radius: 0.35em;
-		background-color: #EEEEEE;
-		box-shadow: 0 0 5px rgba(0,0,0,0.25);
 		max-width: 92.5%;
+		text-align: left;
+		background-color: #EEEEEE;
+		border-radius: 0.35em;
+		box-shadow: 0 0 5px rgba(0,0,0,0.25);
 		margin: 2.5% auto 2em;
 	}
 	
@@ -153,15 +154,15 @@ a {
 
 .post-title {
 	position: absolute;
-	width: 92.5%;
 	bottom: 0;
 	left: 0;
-	margin: 0;
-	padding: 1.5% 5% 1.5% 2.5%;
+	width: 100%;
 	font-size: 2.5em;
-	background: linear-gradient(to top,rgba(0,0,0,.30) 0,transparent 100%);
 	color: var(--bg-color);
 	text-shadow: -1px -1px 1px rgba(108, 108, 108, 0.4);
+	background: linear-gradient(to top,rgba(0,0,0,.30) 0,transparent 100%);
+	padding: 1.5% 5% 1.5% 2.5%;
+	margin: 0;
 }
 
 
