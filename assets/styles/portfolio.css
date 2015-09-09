@@ -1,7 +1,7 @@
-@import 'partials/project.css';
+@import 'variables.css';
 
 a {
-	transition: text-shadow 0.35s ease-out, color 0.35s ease-out;
+	transition: color 0.35s ease-out;
 	color: var(--blue);
 	text-decoration: none;
 	
@@ -29,12 +29,6 @@ a {
 		transform: scale(1);
 		opacity: 1;
 	}
-}
-
-.site-content {
-	display: flex;
-	flex-flow: column nowrap;
-	width: 100%;
 }
 
 @media (hover) {
@@ -125,16 +119,6 @@ a {
 	p {
 		margin: 4%;
 	}
-	
-	@media (hover) {
-	& a:hover {
-		text-shadow: 0 0 10px rgba(0,0,0,0.35);
-	}
-	
-	& a:active {
-		text-shadow: 0 -2px 7px rgba(0,0,0,0.5);
-	}
-	}
 }
 
 .pagination {
@@ -193,13 +177,6 @@ a {
 
 /* Tablet */
 @media (min-width: 35em) {
-	.site-content {
-		display: block;
-		width: 95%;
-		margin: 2.5% auto 0;
-		text-align: left;
-	}
-
 	.item-expand-area {
 		width: 50%;
 		
@@ -210,13 +187,5 @@ a {
 	
 	.caption {
 		font-size: 1.2em;
-	}
-}
-
-
-/* Desktop */
-@media (min-width: 50em) {
-	.site-content {
-		width: 65%;
 	}
 }

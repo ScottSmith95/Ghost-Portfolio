@@ -5,7 +5,7 @@ var gulp       = require('gulp'),
 	sourcemaps = require('gulp-sourcemaps');
 
 var paths = {
-	styles: 'assets/styles/*.css',
+	styles: ['assets/styles/*.css', '!assets/styles/variables.css'],
 	indexScripts: ['node_modules/imagesloaded/imagesloaded.pkgd.js', 'node_modules/masonry-layout/dist/masonry.pkgd.js', 'assets/scripts/portfolio.js'],
 };
 

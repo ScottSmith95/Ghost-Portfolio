@@ -1,6 +1,6 @@
 document.addEventListener( "DOMContentLoaded", function() {
 	
-	var elem = document.querySelector('.site-content');
+	var elem = document.querySelector('.content');
 	
 	// Setup Masonry.
 	var msnry = new Masonry( elem, {
