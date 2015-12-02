@@ -31,28 +31,36 @@ a {
 	}
 }
 
-@media (hover) {
-	.item-expand-area {
-		transition: transform 0.25s ease-out;
-		transform: scale(0.95);
-	
-		&:hover {
-			transform: scale(1);
-		}
-	}
+@keyframes tada {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%, 20% {
+    transform: scale3d(.95, .95, .95) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%, 50%, 70%, 90% {
+    transform: scale3d(1.05, 1.05, 1.05) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%, 60%, 80% {
+    transform: scale3d(1.05, 1.05, 1.05) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
 }
 
-.item {
+.item-content {
 	animation: pop-in 0.75s ease-in-out forwards;
-	transition: box-shadow 0.4s ease-out;
 	display: inline-block;
 	z-index: 1;
-	overflow: hidden;
-	border-radius: 0.35em;
+
 	opacity: 0;
 	color: var(--darkgrey);
-	background-color: #EEEEEE;
-	box-shadow: 0 0 5px rgba(0,0,0,0.25);
+	background-color: var(--bg-color);
 	margin: 2.5%;
 	
 	.no-cssanimations & {
@@ -60,61 +68,54 @@ a {
 	}
 	
 	@media (hover) {
-	margin: 1%;
-	
 	&:hover {
-		overflow: hidden;
-		z-index: 2;
-		box-shadow: 0 0 10px rgba(0,0,0,0.25);
+	.photo {
+		box-shadow: 0 0 5px rgba(0,0,0,0.3);
+	}
 	}
 	}
 }
 
 @media screen and (max-width: 35em) {
-	.fourth .item, .fifth .item, .sixth .item, .seventh .item {
+	.fourth .item-content, .fifth .item-content, .sixth .item-content, .seventh .item-content {
 		animation-name: none;
 		opacity: 1;
 	}
 }
 
 .photo {
+	transition: box-shadow 0.4s ease;
 	overflow: hidden;
 	width: 100%;
 	height: auto;
 	margin: 0 auto;
-	box-shadow: 0 0 0.35em rgba(0,0,0,0.3);
+	box-shadow: 0 0 3px rgba(0,0,0,0.2);
+	border-radius: 5px;
 	text-align: center;
+	
+	@media (hover) {
+	&:hover {
+		animation: tada 1s ease;
+	}
+	}
 }
 
 .projects .photo {
 	width: 145px;
 	height: 145px;
 	margin-top: 5%;
-	box-shadow: none;
 }
 
 .photo img {
-	transition: opacity 0.3s ease-out;
 	display: block;
 	width: 100%;
 	height: auto;
-	border-radius: 0.35em 0.35em 0 0;
-	opacity: 1;
-	
-	@media (hover) {
-	&:hover {
-		opacity: 0.8;
-	}
-	
-	&:hover {
-		opacity: 0.9;
-	}
-	}
 }
 
 .caption {
 	font-size: 1em;
 	line-height: 1.35;
+	text-align: left;
 	
 	p {
 		margin: 4%;
@@ -132,9 +133,7 @@ a {
 		overflow: hidden;
 		max-width: 92.5%;
 		text-align: left;
-		background-color: #EEEEEE;
-		border-radius: 0.35em;
-		box-shadow: 0 0 5px rgba(0,0,0,0.25);
+		background-color: var(--bg-color);
 		margin: 2.5% auto 2em;
 	}
 	
@@ -162,6 +161,7 @@ a {
 	text-shadow: -1px -1px 1px rgba(108, 108, 108, 0.4);
 	background: linear-gradient(to top,rgba(0,0,0,.30) 0,transparent 100%);
 	padding: 1.5% 5% 1.5% 2.5%;
+	border-radius: 0 0 5px 5px;
 	margin: 0;
 }
 
@@ -170,15 +170,17 @@ a {
 	width: 100%;
 	margin: 0;
 	display: block;
+	border-radius: 5px;
 }
 
 .post-content {
+	font-size: 1.1em;
 	padding: 0.75em;
 }
 
 /* Tablet */
 @media (min-width: 35em) {
-	.item-expand-area {
+	.item {
 		width: 50%;
 		
 		.no-js & {
@@ -187,6 +189,6 @@ a {
 	}
 	
 	.caption {
-		font-size: 1.2em;
+		font-size: 1.05em;
 	}
 }
