@@ -177,6 +177,10 @@ a {
 .post-content {
 	font-size: 1.1em;
 	padding: 0.75em;
+	
+	img, iframe {
+		max-width: 100%;
+	}
 }
 
 /* Tablet */
