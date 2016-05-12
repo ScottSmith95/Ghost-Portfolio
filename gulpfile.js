@@ -9,7 +9,7 @@ var paths = {
 	indexScripts: ['node_modules/imagesloaded/imagesloaded.pkgd.js', 'node_modules/masonry-layout/dist/masonry.pkgd.js', 'assets/scripts/portfolio.js'],
 };
 
-gulp.task('styles', function() {
+gulp.task(function styles() {
 	var processors = [
 		require('postcss-import'),
 		require('postcss-nested'),
@@ -25,7 +25,7 @@ gulp.task('styles', function() {
 		.pipe(gulp.dest('assets/styles/build/'));
 });
 
-gulp.task('index-scripts', function() {
+gulp.task(function indexScripts() {
 	return gulp.src(paths.indexScripts)
 		.pipe(sourcemaps.init())
 			.pipe(concat('portfolio.js'))
@@ -34,14 +34,18 @@ gulp.task('index-scripts', function() {
 		.pipe(gulp.dest('assets/scripts/build/'));
 });
 
-gulp.task('watch', function() {
-	gulp.watch(paths.styles, ['styles']);
-	gulp.watch(paths.indexScripts, ['index-scripts']);
+gulp.task(function watch() {
+	gulp.watch(paths.styles, gulp.series('styles'));
+	gulp.watch(paths.indexScripts, gulp.series('indexScripts'));
 });
 
 // Workflows
 // $ gulp: Builds, prefixes, and minifies CSS files; concencates and minifies JS files; watches for changes. The works.
-gulp.task('default', ['styles', 'index-scripts', 'watch']);
+gulp.task('default', gulp.parallel('styles', 'indexScripts', 'watch', function(done) {
+	done();
+}));
 
 // $ gulp build: Builds, prefixes, and minifies CSS files; concencates and minifies JS files. For deployments.
-gulp.task('build', ['styles', 'index-scripts', ]);
+gulp.task('build', gulp.parallel('styles', 'indexScripts', function(done) {
+	done();
+}));
