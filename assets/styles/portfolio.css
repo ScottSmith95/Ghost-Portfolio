@@ -54,7 +54,7 @@ a {
 }
 
 .item-content {
-	animation: pop-in 0.75s ease-in-out forwards;
+	animation: pop-in 0.75s ease-out forwards;
 	display: inline-block;
 	z-index: 1;
 
