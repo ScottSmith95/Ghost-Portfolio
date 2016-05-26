@@ -9,8 +9,8 @@
   "license": "UNLICENSED",
   "devDependencies": {
     "autoprefixer": "^6.3.6",
-    "css-mqpacker": "^4.0.0",
-    "cssnano": "^3.5.2",
+    "css-mqpacker": "^5.0.1",
+    "cssnano": "^3.6.2",
     "gulp": "gulpjs/gulp#4.0",
     "gulp-concat": "^2.6.0",
     "gulp-postcss": "^6.1.1",
