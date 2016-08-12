@@ -11,14 +11,14 @@
     "build": "gulp build"
   },
   "devDependencies": {
-    "autoprefixer": "^6.3.6",
+    "autoprefixer": "^6.4.0",
     "css-mqpacker": "^5.0.1",
-    "cssnano": "^3.6.2",
+    "cssnano": "^3.7.3",
     "gulp": "gulpjs/gulp#4.0",
     "gulp-concat": "^2.6.0",
     "gulp-postcss": "^6.1.1",
     "gulp-sourcemaps": "^1.6.0",
-    "gulp-uglify": "^1.5.3",
+    "gulp-uglify": "^2.0.0",
     "imagesloaded": "^4.1.0",
     "masonry-layout": "^4.1.0",
     "postcss-custom-properties": "^5.0.1",
