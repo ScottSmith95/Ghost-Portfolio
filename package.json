@@ -13,14 +13,14 @@
   "devDependencies": {
     "autoprefixer": "^6.4.0",
     "css-mqpacker": "^5.0.1",
-    "cssnano": "^3.7.3",
+    "cssnano": "^3.7.4",
     "gulp": "gulpjs/gulp#4.0",
     "gulp-concat": "^2.6.0",
     "gulp-postcss": "^6.1.1",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^2.0.0",
     "imagesloaded": "^4.1.0",
-    "masonry-layout": "^4.1.0",
+    "masonry-layout": "^4.1.1",
     "postcss-custom-properties": "^5.0.1",
     "postcss-import": "^8.1.2",
     "postcss-nested": "^1.0.0"
