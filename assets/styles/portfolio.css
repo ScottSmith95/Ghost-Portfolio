@@ -19,6 +19,7 @@ a {
 .content {
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 0;
 }
 
 .item-content {
@@ -26,6 +27,7 @@ a {
 	display: inline-block;
 	z-index: 1;
 	color: var(--darkgrey);
+	margin-bottom: var(--space-l1);
 	
 	@media (hover) {
 	&:hover {
@@ -118,7 +120,7 @@ a {
 
 .post-content {
 	font-size: 1.1em;
-	margin: 0 var(--space-l1);
+	margin: var(--space-l1) var(--space-l1) 0;
 	
 	img, iframe {
 		max-width: 100%;
@@ -154,6 +156,10 @@ a {
 	
 	.caption {
 		font-size: 1.05em;
+	}
+	
+	.post-header {
+		margin: 0 var(--space-l1);
 	}
 }
 
