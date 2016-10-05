@@ -120,7 +120,6 @@ a {
 	.post {
 		max-width: 92.5%;
 		text-align: left;
-		background-color: var(--bg-color);
 		margin: 2.5% auto 2em;
 	}
 	
