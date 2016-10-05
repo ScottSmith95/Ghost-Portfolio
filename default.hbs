@@ -42,8 +42,10 @@ __    / /  | |     __   | |     | |    | |       | |
 <body class="{{body_class}}">
 	
 	<header>
-		<div class="nav"><a href="../">Scott</a>{{#is "index"}}<h1>Portfolio</h1>{{else}}<h2><a href="{{@blog.url}}">Portfolio</a></h2>{{/is}}</div>
-    	<div class="desc hire"><p>These are projects I have worked on during jobs and internships. Feel free to contact me through any means available on my <a href="/">front page</a>.</p></div>
+		<div class="nav"><a href="/">Scott</a>{{#is "index"}}<h1>Portfolio</h1>{{else}}<h2><a href="{{@blog.url}}">Portfolio</a></h2>{{/is}}</div>
+    	<div class="desc hire">
+	    	<p>These are projects I have worked on during jobs and internships. Feel free to contact me through any means available on my <a href="/">front page</a>.</p>
+	    </div>
 	</header>
 	
 	{{! Everything else gets inserted here }}

@@ -50,18 +50,11 @@ a {
 }
 
 .item-content {
-	animation: pop-in 0.75s ease-out forwards;
+	animation: pop-in 0.75s ease-out backwards;
 	display: inline-block;
 	z-index: 1;
-
-	opacity: 0;
 	color: var(--darkgrey);
-	background-color: var(--bg-color);
 	margin: 2.5%;
-	
-	.no-cssanimations & {
-		opacity: 1;
-	}
 	
 	@media (hover) {
 	&:hover {
@@ -97,10 +90,8 @@ a {
 	}
 }
 
-.projects .photo {
-	width: 145px;
-	height: 145px;
-	margin-top: 5%;
+.tag-projects .photo {
+	background-color: var(--bg-color);
 }
 
 .photo img {
