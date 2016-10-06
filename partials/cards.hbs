@@ -1,11 +1,17 @@
 {{! Each post will be output using this markup }}
 {{#foreach posts}}
 
-<article class="{{post_class}} item">
-	<div class="item-content">
-		{{#if image}}<div class="photo"><a href="{{url}}"><img class="post-image" src="{{image}}"></a></div>{{/if}}
-		<div class="caption"><p>{{excerpt}}</p></div>
-	</div>
+<article class="card {{post_class}}">
+	
+	{{#if image}}
+		<a href="{{url}}">
+			<img class="post-image" src="{{image}}" width="256" height="160">
+		</a>
+	{{/if}}
+	<a href="{{url}}">
+		<h3 class="post-title">{{title}}</h3>
+	</a>
+	
 </article>
 
 {{/foreach}}
