@@ -1,4 +1,4 @@
-{{! Each post will be output using this markup }}
+{{#get "posts" filter="featured:false"}}
 {{#foreach posts}}
 
 <article class="card {{post_class}}">
@@ -8,10 +8,11 @@
 			<img class="post-image" src="{{image}}" width="256" height="160">
 		</a>
 	{{/if}}
-	<a href="{{url}}">
-		<h3 class="post-title">{{title}}</h3>
-	</a>
+	<h3 class="post-title">
+		<a href="{{url}}">{{title}}</a>
+	</h3>
 	
 </article>
 
 {{/foreach}}
+{{/get}}

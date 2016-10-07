@@ -5,7 +5,7 @@ var gulp       = require('gulp'),
 	sourcemaps = require('gulp-sourcemaps');
 
 var paths = {
-	styles: ['assets/styles/*.css', '!assets/styles/variables.css'],
+	styles: ['assets/styles/*.css'],
 	indexScripts: ['node_modules/imagesloaded/imagesloaded.pkgd.js', 'node_modules/masonry-layout/dist/masonry.pkgd.js', 'assets/scripts/portfolio.js'],
 };
 
@@ -18,7 +18,7 @@ gulp.task(function styles() {
 		require('autoprefixer')('last 2 versions', '> 1%', 'ie 9', 'ie 8', 'Firefox ESR'),
 		require('cssnano')({autoprefixer: false})
     ];
-	return gulp.src(paths.styles)
+	return gulp.src('assets/styles/portfolio.css')
 		.pipe(sourcemaps.init())
 			.pipe(postcss(processors))
 		.pipe(sourcemaps.write('./'))

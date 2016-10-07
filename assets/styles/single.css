@@ -1,0 +1,46 @@
+.post-template {
+	header {
+		animation: none;
+		opacity: 1;
+	}
+	
+	.post {
+		max-width: 100%;
+		text-align: left;
+	}
+	
+	.post-header {
+		position: relative; /* Set context for absolutely positioned post title. */
+		margin: 0 var(--space-l1);
+	}
+	
+	.post-title {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		font-size: 2.5em;
+		color: var(--bg-color);
+		text-shadow: -1px -1px 1px rgba(108, 108, 108, 0.4);
+		background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.3));
+		padding: 1.5% 5% 1.5% 2.5%;
+		border-radius: 0 0 5px 5px;
+		margin: 0;
+	}
+	
+	.post-content {
+		font-size: 1.1em;
+		margin: var(--space-l2) var(--space-l2) 0;
+		
+		img, iframe {
+			max-width: 100%;
+		}
+	}
+}
+
+/* Tablet */
+@media (min-width: 35em) {
+	.post-header {
+		margin: 0 var(--space-l2);
+	}
+}
