@@ -1,5 +1,6 @@
-section.featured {
+section.feature {
 	text-align: left;
+	margin-bottom: var(--space-l3);
 	
 	img {
 		max-width: 100%;
@@ -61,7 +62,9 @@ section.featured {
 }
 
 @media (min-width: 35em) {
-	section.featured {		
+	section.feature {
+		margin-bottom: var(--space-l4);
+			
 		.main-info {
 			display: flex;
 			justify-content: space-between;
@@ -111,7 +114,7 @@ section.featured {
 }
 
 @media (min-width: 50em) {
-	section.featured {
+	section.feature {
 		.aside {
 			margin-right: var(--space-l3);
 		}
