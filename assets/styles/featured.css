@@ -31,7 +31,7 @@ section.feature {
 	.aside-image {
 		display: block;
 		border-radius: 5px;
-		box-shadow: 0 3px 25px rgba(14, 21, 47, 0.35);
+		box-shadow: 0 2px 5px rgba(14, 21, 47, 0.2);
 	}
 	
 	.aside-text {
@@ -86,6 +86,10 @@ section.feature {
 		.aside {
 			position: relative;
 			margin-top: var(--space-l3);
+		}
+		
+		.aside-image {
+			box-shadow: 0 3px 25px rgba(14, 21, 47, 0.35);
 		}
 		
 		.aside-text {
