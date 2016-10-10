@@ -55,22 +55,3 @@ section {
 		margin-right: auto;
 	}
 }
-
-/* Animations */
-@keyframes tada {
-  from {
-    transform: scale3d(1, 1, 1);
-  }
-  10%, 20% {
-    transform: scale3d(.96, .96, .96) rotate3d(0, 0, 1, -2deg);
-  }
-  30%, 50%, 70%, 90% {
-    transform: scale3d(1.04, 1.04, 1.04) rotate3d(0, 0, 1, 2deg);
-  }
-  40%, 60%, 80% {
-    transform: scale3d(1.04, 1.04, 1.04) rotate3d(0, 0, 1, -2deg);
-  }
-  to {
-    transform: scale3d(1, 1, 1);
-  }
-}

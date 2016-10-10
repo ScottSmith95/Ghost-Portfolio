@@ -29,8 +29,10 @@
 	}
 	
 	.post-content {
-		font-size: 1.1em;
-		margin: var(--space-l2) var(--space-l2) 0;
+		max-width: 45rem;
+		font-size: 1.15em;
+		padding: 0 var(--space-l2);
+		margin: var(--space-l2) auto 0;
 		
 		img, iframe {
 			max-width: 100%;
@@ -44,7 +46,15 @@
 
 /* Tablet */
 @media (min-width: 35em) {
+.post-template {
 	.post-header {
 		margin: 0 var(--space-l2);
 	}
+	
+	.post-content {
+		font-size: 1.25em;
+		margin-top: var(--space-l3);
+		margin-bottom: var(--space-l3);
+	}
+}
 }
