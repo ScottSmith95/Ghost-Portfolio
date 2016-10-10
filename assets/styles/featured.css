@@ -63,7 +63,9 @@ section.feature {
 
 @media (min-width: 35em) {
 	section.feature {
-		margin-bottom: var(--space-l4);
+		&:nth-last-child(n+3) {
+			margin-bottom: var(--space-l4);
+		}
 			
 		.main-info {
 			display: flex;
