@@ -1,6 +1,6 @@
 {
   "name": "Portfolio",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "author": "Scott Smith <mail@ScottHSmith.com> (http://ScottHSmith.com)",
   "repository": {
     "type": "git",
@@ -11,16 +11,12 @@
     "build": "gulp build"
   },
   "devDependencies": {
-    "autoprefixer": "^6.5.0",
+    "autoprefixer": "^6.5.1",
     "css-mqpacker": "^5.0.1",
-    "cssnano": "^3.7.6",
+    "cssnano": "^3.7.7",
     "gulp": "gulpjs/gulp#4.0",
-    "gulp-concat": "^2.6.0",
     "gulp-postcss": "^6.2.0",
-    "gulp-sourcemaps": "^1.6.0",
-    "gulp-uglify": "^2.0.0",
-    "imagesloaded": "^4.1.1",
-    "masonry-layout": "^4.1.1",
+    "gulp-sourcemaps": "^2.1.1",
     "postcss-custom-properties": "^5.0.1",
     "postcss-import": "^8.1.2",
     "postcss-nested": "^1.0.0"
