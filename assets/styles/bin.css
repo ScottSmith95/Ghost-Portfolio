@@ -67,11 +67,14 @@
 	
 	.card {
 		display: inline-block;
-		width: 47%;
 		margin-bottom: var(--space-l3);
 		
-		&:nth-child(odd) {
-			margin-right: 5%;
+		@media (min-width: 35em) {
+			width: 47%;
+			
+			&:nth-child(odd) {
+				margin-right: 5%;
+			}
 		}
 		
 		.post-image {
