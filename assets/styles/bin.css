@@ -8,10 +8,35 @@
 		font-size: 2em;
 		line-height: 1;
 		margin: 0 0 0.625em;
+		
+		.js & { /* Layout change will only with with JS, so don't hint it's clickable without it working. */
+			position: relative;
+			cursor: pointer;
+			display: inline-block;
+			
+			&::after {
+				transition: transform 0.3s ease-out;
+				content: '';
+				display: inline-block;
+				position: relative; /* Position relative allows arrow to wrap to new line before text. */
+				top: -0.15em;
+				right: -0.25em;
+				height: 0;
+				width: 0;
+				border-left: 0.4rem solid var(--text-color);
+				border-bottom: 0.3rem solid transparent;
+				border-top: 0.3rem solid transparent;
+			}
+			
+			&.active::after {
+				transform: rotateZ(90deg);
+			}
+		}
 	}
 }
 
 .scroll-well {
+	transition: background-color 0.5s ease, box-shadow 0.5s ease;
 	position: relative;
 	white-space: nowrap;
 	overflow-x: auto;
@@ -33,6 +58,28 @@
 		
 		&:last-child {
 			margin-right: 0;
+		}
+	}
+}
+
+.grid {
+	margin-top: var(--space-l1);
+	
+	.card {
+		display: inline-block;
+		width: 47%;
+		margin-bottom: var(--space-l3);
+		
+		&:nth-child(odd) {
+			margin-right: 5%;
+		}
+		
+		.post-image {
+			height: auto;
+		}
+		
+		.post-title {
+			font-size: 2em;
 		}
 	}
 }
