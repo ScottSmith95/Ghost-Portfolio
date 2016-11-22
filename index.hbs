@@ -15,11 +15,11 @@
 
 </main>
 
-	{{!! Display the previous/next pagination links if pagination is necessary }}
-	{{#if pagination.prev}}
+{{!! Display the previous/next pagination links if pagination is necessary }}
+{{#if pagination.prev}}
+	{{pagination}}
+{{else}}
+	{{#if pagination.next}}
 		{{pagination}}
-	{{else}}
-		{{#if pagination.next}}
-			{{pagination}}
-		{{/if}}
 	{{/if}}
+{{/if}}
