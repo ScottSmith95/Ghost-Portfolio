@@ -15,9 +15,15 @@ section.feature {
 	}
 	
 	.post-image {
+		animation: main-image 1s ease-out 300ms backwards;
+		
 		&:hover {
 			box-shadow: 0 3px 9px rgba(14,21,47,0.3);
 		}
+	}
+	
+	.main-text {
+		animation: main-text 1s ease-out 300ms backwards;
 	}
 	
 	p {
@@ -57,6 +63,8 @@ section.feature {
 	}
 	
 	.aside.one {
+		animation: aside-one 1s ease-out 300ms backwards;
+		
 		.aside-image {
 			width: 50%;
 			max-width: 15rem;
@@ -67,6 +75,8 @@ section.feature {
 	}
 	
 	.aside.two {
+		animation: aside-two 1s ease-out 300ms backwards;
+		
 		width: 80%;
 		max-width: 25rem;
 		margin-left: auto;
@@ -96,6 +106,7 @@ section.feature {
 		}
 		
 		.main-text {
+			animation-delay: 0s;
 			width: calc(35% - var(--space-l2));
 			
 			h2 {
@@ -155,5 +166,79 @@ section.feature {
 		.aside.two {
 			margin-top: var(--space-l3);
 		}
+	}
+}
+
+/* ----------------- */
+/*     Animations    */
+/* ----------------- */
+@keyframes main-image {
+	from {
+		opacity: 0;
+		transform: translateX(-7.5%) translateY(-25%);
+	}
+	60% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(0) translateY(0);
+	}
+}
+
+@keyframes main-text {
+	from {
+		opacity: 0;
+		transform: translateX(7.5%) translateY(-25%);
+	}
+	60% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(0) translateY(0);
+	}
+}
+
+@media (min-width: 35em) {
+@keyframes main-text {
+	from {
+		opacity: 0;
+		transform: translateX(10%);
+	}
+	60% {
+		opacity: 1;
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+}
+
+@keyframes aside-one {
+	from {
+		opacity: 0;
+		transform: translateX(7.5%) translateY(25%);
+	}
+	60% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(0) translateY(0);
+	}
+}
+
+@keyframes aside-two {
+	from {
+		opacity: 0;
+		transform: translateX(-7.5%) translateY(25%);
+	}
+	60% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(0) translateY(0);
 	}
 }
