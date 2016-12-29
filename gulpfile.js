@@ -16,7 +16,7 @@ gulp.task(function styles() {
 		require('postcss-nested'),
 		require('postcss-custom-properties'),
 		require('css-mqpacker')({sort: true}),
-		require('autoprefixer')('last 2 versions', '> 1%', 'ie 9', 'ie 8', 'Firefox ESR'),
+		require('autoprefixer'),
 		require('cssnano')({autoprefixer: false})
     ];
 	return gulp.src('assets/styles/portfolio.css')

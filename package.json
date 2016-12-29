@@ -11,7 +11,7 @@
     "build": "gulp build"
   },
   "devDependencies": {
-    "autoprefixer": "^6.5.3",
+    "autoprefixer": "^6.6.0",
     "css-mqpacker": "^5.0.1",
     "cssnano": "^3.9.1",
     "gulp": "gulpjs/gulp#4.0",
@@ -21,5 +21,11 @@
     "postcss-custom-properties": "^5.0.1",
     "postcss-import": "^9.0.0",
     "postcss-nested": "^1.0.0"
-  }
+  },
+  "browserslist": [
+    "last 2 versions",
+    "> 2.5% in US",
+    "IE 9",
+    "Firefox ESR"
+  ]
 }
