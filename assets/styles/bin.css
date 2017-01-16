@@ -1,7 +1,7 @@
 .secondary-items {
 	text-align: left;
 	padding-top: var(--space-l2);
-	border-top: 1px solid var(--lightgrey);
+	border-top: 3px solid #D9DBDE;
 	margin-bottom: var(--space-l2);
 	
 	h2 {
