@@ -50,6 +50,11 @@
 		p {
 			margin-top: 0;
 		}
+		
+		ul,
+		ol {
+			padding-left: var(--space-l2);
+		}
 	}
 }
 
@@ -64,6 +69,11 @@
 		font-size: 1.25em;
 		margin-top: var(--space-l3);
 		margin-bottom: var(--space-l3);
+		
+		ul,
+		ol {
+			padding-left: var(--space-l3);
+		}
 	}
 }
 }
