@@ -34,7 +34,9 @@
 		padding: 0 var(--space-l2);
 		margin: var(--space-l2) auto 0;
 		
-		img, iframe {
+		img,
+		video,
+		iframe {
 			max-width: 100%;
 		}
 		
