@@ -58,6 +58,32 @@
 			padding-left: var(--space-l2);
 		}
 	}
+	
+	footer {
+		max-width: 42.5rem;
+		border-top: 3px solid var(--divider);
+		margin: 0 auto;
+	}
+	
+	footer a {
+		transition: background-color 0.3s ease, color 0.3s ease;
+		display: block;
+		width: 100%;
+		font-size: 1.75rem;
+		text-align: center;
+		padding: var(--space-l2) 0;
+		background: transparent;
+		
+		@media (hover) {
+		&:hover {
+			background: RGBA(147, 187, 201, 0.2);
+		}
+		
+		&:active {
+			background: RGBA(147, 187, 201, 0.3);
+		}
+		}
+	}
 }
 
 /* Tablet */
@@ -77,5 +103,9 @@
 			padding-left: var(--space-l3);
 		}
 	}
+}
+
+footer a {
+	font-size: 2rem;
 }
 }
