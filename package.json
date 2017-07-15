@@ -1,13 +1,20 @@
 {
-  "name": "Portfolio",
+  "name": "portfolio",
   "version": "2.1.0",
   "description": "Ghost theme for my personal portfolio.",
-  "author": "Scott Smith <mail@ScottHSmith.com> (http://ScottHSmith.com)",
+  "author": {
+    "name": "Scott Smith",
+    "email": "mail@ScottHSmith.com",
+    "url": "https://ScottHSmith.com"
+  },
+  "license": "UNLICENSED",
+  "engines": {
+    "ghost": "^1.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/ScottSmith95/Ghost-Portfolio.git"
   },
-  "license": "UNLICENSED",
   "scripts": {
     "build": "gulp build"
   },
@@ -28,5 +35,8 @@
     "> 2.5% in US",
     "IE 9",
     "Firefox ESR"
-  ]
+  ],
+  "config": {
+    "posts_per_page": 20
+  }
 }
