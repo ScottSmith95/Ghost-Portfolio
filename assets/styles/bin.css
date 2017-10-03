@@ -3,8 +3,9 @@
 	padding-top: var(--space-l2);
 	border-top: 3px solid #D9DBDE;
 	margin-bottom: var(--space-l2);
+	margin-bottom: calc(var(--space-l2) + constant(safe-area-inset-bottom));
 	
-	h2 {
+	h2.bin-title {
 		font-size: 2em;
 		line-height: 1;
 		margin: 0 0 0.625em;
@@ -94,9 +95,13 @@
 	
 	.post-title {
 		font-size: 1.65em;
-		margin: var(--space-l1) 0 0;
 		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;
+		margin: var(--space-l1) 0 0;
+		
+		a {
+			color: var(--text-color);
+		}
 	}
 }

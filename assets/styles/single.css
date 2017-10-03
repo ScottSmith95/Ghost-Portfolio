@@ -14,7 +14,7 @@
 		margin: 0 var(--space-l1);
 	}
 	
-	.post-title {
+	h1.post-title {
 		position: absolute;
 		bottom: 0;
 		left: 0;
@@ -60,29 +60,17 @@
 	}
 	
 	footer {
-		max-width: 42.5rem;
-		border-top: 3px solid var(--divider);
-		margin: 0 auto;
+		max-width: 55em;
+		margin: var(--space-l1) auto var(--space-l2);
 	}
 	
-	footer a {
-		transition: background-color 0.3s ease, color 0.3s ease;
-		display: block;
-		width: 100%;
-		font-size: 1.75rem;
-		text-align: center;
-		padding: var(--space-l2) 0;
-		background: transparent;
-		
-		@media (hover) {
-		&:hover {
-			background: RGBA(147, 187, 201, 0.2);
-		}
-		
-		&:active {
-			background: RGBA(147, 187, 201, 0.3);
-		}
-		}
+	.secondary-items {
+		border-top: 3px solid var(--divider);
+		margin: 0 var(--space-l1);
+	}
+	
+	.scroll-well {
+		padding-top: var(--space-l1);
 	}
 }
 
@@ -103,9 +91,18 @@
 			padding-left: var(--space-l3);
 		}
 	}
-}
-
-footer a {
-	font-size: 2rem;
+	
+	footer {
+		padding-top: var(--space-l2);
+		margin: var(--space-l2) auto;
+	}
+	
+	.secondary-items {
+		margin: 0 var(--space-l2);
+	}
+	
+	.scroll-well {
+		padding-top: var(--space-l2);
+	}
 }
 }
