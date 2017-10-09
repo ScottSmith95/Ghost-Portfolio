@@ -1,0 +1,43 @@
+{{#get "posts" slug="career-canvas"}}
+{{#foreach posts}}
+
+<section class="feature cf career-canvas">
+	
+	<div class="main-info">
+		<a class="main-image" href="{{url}}">
+			<img class="post-image" src="{{feature_image}}">
+		</a>
+		
+		<div class="main-text">
+			<h2>
+				<a href="{{url}}">{{title}}</a>
+			</h2>
+			<p class="item-text">
+				Career Canvas is a class-leading writing service providing newcomers and professionals alike a way to get professionally written résumés. I created branding and did all front-end web design for the company.
+				<br>
+				<a class="item-link" href="{{url}}">See More</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="aside one cf">
+		<a href="{{url}}"><img class="aside-image" src="{{asset "features/career-canvas/dashboard.png"}}"></a>
+		<p class="aside-text">
+			The user and admin dashboards alike are designed with crisp typography and easy to understand layout. Experiences for end users shouldn't be an afterthought. 
+		</p>
+	</div>
+	
+	<div class="aside two cf">
+		<a href="{{url}}"><img class="aside-image" src="{{asset "features/career-canvas/header-mobile.png"}}"></a>
+		<p class="aside-text">
+			The header is accessible to keyboard and screen reader users and doesn't require a manual to understand the site's hierarchy.
+		</p>
+	</div>
+	
+	<!-- EVO-specifc content here. -->
+	
+</section>
+
+{{/foreach}}
+
+{{/get}}
