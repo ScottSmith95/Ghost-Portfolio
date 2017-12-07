@@ -4,6 +4,7 @@
 	border-top: 3px solid #D9DBDE;
 	margin-bottom: var(--space-l2);
 	margin-bottom: calc(var(--space-l2) + constant(safe-area-inset-bottom));
+	margin-bottom: calc(var(--space-l2) + env(safe-area-inset-bottom));
 	
 	h2.bin-title {
 		font-size: 2em;
