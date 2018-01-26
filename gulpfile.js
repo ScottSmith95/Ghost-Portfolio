@@ -1,23 +1,23 @@
 'use strict';
 
-var gulp       = require('gulp'),
-	postcss    = require('gulp-postcss'),
-	uglify     = require('gulp-uglify'),
-	sourcemaps = require('gulp-sourcemaps');
+const gulp       = require('gulp');
+const postcss    = require('gulp-postcss');
+const uglify     = require('gulp-uglify');
+const sourcemaps = require('gulp-sourcemaps');
 
-var paths = {
+const paths = {
 	styles: {
 		src: 'assets/styles/portfolio.css',
 		dest: 'assets/styles/build/',
 		watch: 'assets/styles/*.css'
 	},
 	scripts: {
-		src: 'assets/scipts/*.js',
+		src: 'assets/scripts/*.js',
 		dest: 'assets/scripts/build/'
 	}
 };
 
-var processors = [
+const processors = [
 	require('postcss-import'),
 	require('postcss-nested'),
 	require('postcss-custom-properties'),
@@ -49,10 +49,10 @@ function watch() {
 
 // Workflows
 // $ gulp: Builds, prefixes, and minifies CSS files; concencates and minifies JS files; watches for changes. The works.
-var defaultTask = gulp.parallel(styles, scripts, watch);
+const defaultTask = gulp.parallel(styles, scripts, watch);
 
-// $ gulp build: Builds, prefixes, and minifies CSS files; concencates and minifies JS files. For deployments.
-var buildTask = gulp.parallel(styles, scripts);
+// $ gulp build: Builds, prefixes, and minifies CSS files; concencates and minifies JS files. For const.
+const buildTask = gulp.parallel(styles, scripts);
 
 // Exports
 // Externalise individual tasks.
