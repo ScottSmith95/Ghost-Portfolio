@@ -23,7 +23,12 @@ const processors = [
 	require('postcss-custom-properties'),
 	require('css-mqpacker')({sort: true}),
 	require('autoprefixer'),
-	require('cssnano')({autoprefixer: false})
+	require('postcss-normalize'),
+	require('cssnano')({
+		preset: ['default', {
+			calc: false,
+			mergeLonghand: false // These conflict with processing nested calc() and env values().
+		}]})
 ];
 
 function styles() {
