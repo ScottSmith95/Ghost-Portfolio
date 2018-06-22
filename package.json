@@ -19,17 +19,17 @@
     "build": "gulp build"
   },
   "devDependencies": {
-    "autoprefixer": "^7.2.5",
+    "autoprefixer": "^8.6.3",
     "css-mqpacker": "^6.0.2",
     "cssnano": "^3.10.0",
     "gulp": "^4.0.0",
     "gulp-postcss": "^7.0.1",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify": "^3.0.0",
-    "postcss-custom-properties": "^6.2.0",
-    "postcss-import": "^11.0.0",
+    "postcss-custom-properties": "^7.0.0",
+    "postcss-import": "^11.1.0",
     "postcss-nested": "^3.0.0",
-    "postcss-normalize": "^4.0.0"
+    "postcss-normalize": "^6.0.0"
   },
   "browserslist": [
     "last 2 versions",
@@ -41,6 +41,6 @@
     "posts_per_page": 20
   },
   "dependencies": {
-    "gulp-debug": "^3.2.0"
+    "gulp-debug": "^4.0.0"
   }
 }
