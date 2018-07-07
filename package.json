@@ -34,7 +34,6 @@
   "browserslist": [
     "last 2 versions",
     "> 2.5% in US",
-    "IE 9",
     "Firefox ESR"
   ],
   "config": {
