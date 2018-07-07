@@ -19,9 +19,9 @@
     "build": "gulp build"
   },
   "devDependencies": {
-    "autoprefixer": "^8.6.3",
+    "autoprefixer": "^8.6.5",
     "css-mqpacker": "^6.0.2",
-    "cssnano": "^3.10.0",
+    "cssnano": "^4.0.0",
     "gulp": "^4.0.0",
     "gulp-postcss": "^7.0.1",
     "gulp-sourcemaps": "^2.6.4",

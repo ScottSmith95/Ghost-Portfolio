@@ -13,7 +13,7 @@ __    / /  | |     __   | |     | |    | |       | |
  \____/      \_____/      \_____/      |_|       |_|
 
 -->
-<html lang="en" class="no-js">
+<html lang="{{lang}}" class="no-js">
 
 <head>
 	{{! Page Meta }}
@@ -43,10 +43,10 @@ __    / /  | |     __   | |     | |    | |       | |
 	<header>
 		<div class="nav">
 			<a href="/"><span class="sr-text">Back to </span>Scott<span class="sr-text"> Smith homepage</span></a>
-			{{#is "index"}}<h1>Portfolio</h1>{{else}}<h2><a href="{{@blog.url}}">Portfolio</a></h2>{{/is}}</div>
+			{{#is "index"}}<h1>{{t "Portfolio"}}</h1>{{else}}<h2><a href="{{@blog.url}}">{{t "Portfolio"}}</a></h2>{{/is}}</div>
 		{{#is "index"}}
 	    	<div class="desc hire">
-		    	<p>These are projects I have worked on during jobs and internships. Feel free to contact me through any means available on my <a href="/">front page</a> and by <a href="mailto:mail@ScottHSmith.com">email</a>.</p>
+		    	<p>{{{t "These are projects I have built both individually and in collaboration with talented teams. Feel free to contact me through any means available on my <a href='{homepagelink}'>home page</a> and by <a href='{emaillink}'>email</a>." homepagelink="/" emaillink="mailto:mail@ScottHSmith.com"}}}</p>
 		    </div>
 		{{/is}}
 	</header>
