@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "description": "Ghost theme for my personal portfolio.",
   "author": {
     "name": "Scott Smith",
@@ -9,7 +9,7 @@
   },
   "license": "UNLICENSED",
   "engines": {
-    "ghost": "^1.0.0"
+    "ghost": ">=1.23.0"
   },
   "repository": {
     "type": "git",
