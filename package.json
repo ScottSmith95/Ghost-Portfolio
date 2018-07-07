@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "Ghost theme for my personal portfolio.",
   "author": {
     "name": "Scott Smith",
@@ -39,8 +39,5 @@
   ],
   "config": {
     "posts_per_page": 20
-  },
-  "dependencies": {
-    "gulp-debug": "^4.0.0"
   }
 }
