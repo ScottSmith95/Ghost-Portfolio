@@ -20,10 +20,18 @@ section.feature {
 		&:hover {
 			box-shadow: 0 3px 9px rgba(14,21,47,0.3);
 		}
+		
+		@media (prefers-reduced-motion: reduce) {
+			animation: none;
+		}
 	}
 	
 	.main-text {
 		animation: main-text 1s ease-out 300ms backwards;
+		
+		@media (prefers-reduced-motion: reduce) {
+			animation: none;
+		}
 	}
 	
 	p {
@@ -71,6 +79,10 @@ section.feature {
 	.aside.one {
 		animation: aside-one 1s ease-out 300ms backwards;
 		
+		@media (prefers-reduced-motion: reduce) {
+			animation: none;
+		}
+		
 		.aside-image {
 			width: 50%;
 			max-width: 15rem;
@@ -88,6 +100,10 @@ section.feature {
 		margin-left: auto;
 		margin-right: auto;
 		margin-bottom: var(--space-l2);
+		
+		@media (prefers-reduced-motion: reduce) {
+			animation: none;
+		}
 		
 		.aside-text {
 			margin-top: 1em;
