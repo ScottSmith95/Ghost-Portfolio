@@ -5,21 +5,24 @@
 	
 	{{> "featured-career-canvas"}}
 	{{> "featured-brief-media"}}
-	
-	<section class="secondary-items">
+
+</main>
+
+<footer>
+	<div class="secondary-items">
 		<h2 class="bin-title">{{t "More Work"}}</h2>
 		<div id="secondary-items-container" class="scroll-well">
 			{{> "bin"}}
 		</div>
-	</section>
-
-</main>
-
-{{!! Display the previous/next pagination links if pagination is necessary }}
-{{#if pagination.prev}}
-	{{pagination}}
-{{else}}
-	{{#if pagination.next}}
+	</div>
+	
+	{{!! Display the previous/next pagination links if pagination is necessary }}
+	{{#if pagination.prev}}
 		{{pagination}}
+	{{else}}
+		{{#if pagination.next}}
+			{{pagination}}
+		{{/if}}
 	{{/if}}
-{{/if}}
+
+</footer>

@@ -2,9 +2,6 @@
 	text-align: left;
 	padding-top: var(--space-l2);
 	border-top: 3px solid #D9DBDE;
-	margin-bottom: var(--space-l2);
-	margin-bottom: calc(var(--space-l2) + constant(safe-area-inset-bottom));
-	margin-bottom: calc(var(--space-l2) + env(safe-area-inset-bottom));
 	
 	h2.bin-title {
 		font-size: 2em;
@@ -48,7 +45,7 @@
 	padding: var(--space-l2) var(--space-l2) var(--space-l1);
 	border-radius: 10px;
 	
-	.card {
+	.card.post {
 		display: inline-block;
 		width: 16em; /* Since images are set to 256 px and 256/16 is 16. */
 		max-width: 92.5%;
@@ -71,12 +68,17 @@
 		display: inline-block;
 		margin-bottom: var(--space-l3);
 		
+		
 		@media (min-width: 35em) {
 			width: 47%;
 			
 			&:nth-child(odd) {
 				margin-right: 5%;
 			}
+		}
+		
+		&:last-child {
+			margin-bottom: 0;
 		}
 		
 		.post-image {

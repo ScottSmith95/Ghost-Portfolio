@@ -80,20 +80,6 @@
 		font-style: italic;
 		padding: 0 var(--space-l2) var(--space-l1);
 	}
-	
-	footer {
-		max-width: 55em;
-		margin: var(--space-l1) auto var(--space-l2);
-	}
-	
-	.secondary-items {
-		border-top: 3px solid var(--divider);
-		margin: 0 var(--space-l1);
-	}
-	
-	.scroll-well {
-		padding-top: var(--space-l1);
-	}
 }
 
 /* Tablet */
@@ -112,19 +98,6 @@
 		ol {
 			padding-left: var(--space-l3);
 		}
-	}
-	
-	footer {
-		padding-top: var(--space-l2);
-		margin: var(--space-l2) auto;
-	}
-	
-	.secondary-items {
-		margin: 0 var(--space-l2);
-	}
-	
-	.scroll-well {
-		padding-top: var(--space-l2);
 	}
 }
 }

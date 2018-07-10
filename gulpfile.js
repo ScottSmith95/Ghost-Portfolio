@@ -2,7 +2,10 @@
 
 const gulp       = require('gulp');
 const postcss    = require('gulp-postcss');
-const uglify     = require('gulp-uglify');
+// Use uglify-es minifier with gulp-uglify for ES2015 support.
+const composer   = require('gulp-uglify/composer');
+const uglifyes   = require('uglify-es');
+const minify     = composer(uglifyes, console);
 const sourcemaps = require('gulp-sourcemaps');
 
 const paths = {
@@ -42,7 +45,7 @@ function styles() {
 function scripts() {
 	return gulp.src(paths.scripts.src)
 		.pipe(sourcemaps.init())
-			.pipe(uglify())
+			.pipe(minify())
 		.pipe(sourcemaps.write('./'))
 		.pipe(gulp.dest(paths.scripts.dest));
 }

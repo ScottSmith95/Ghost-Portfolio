@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "version": "2.2.3",
+  "version": "2.2.4",
   "description": "Ghost theme for my personal portfolio.",
   "author": {
     "name": "Scott Smith",
@@ -29,7 +29,8 @@
     "postcss-custom-properties": "^7.0.0",
     "postcss-import": "^11.1.0",
     "postcss-nested": "^3.0.0",
-    "postcss-normalize": "^6.0.0"
+    "postcss-normalize": "^6.0.0",
+    "uglify-es": "^3.3.9"
   },
   "browserslist": [
     "last 2 versions",
