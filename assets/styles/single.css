@@ -53,10 +53,32 @@
 			margin-top: 0;
 		}
 		
+		a {
+			text-decoration: underline;
+		}
+		
 		ul,
 		ol {
 			padding-left: var(--space-l2);
 		}
+	}
+	
+	figure.kg-image-card {
+		margin: var(--space-l1) 0;
+		text-align: left;
+	}
+	
+	img.kg-image.kg-image-wide {
+		width: 100%;
+		height: auto;
+	}
+	
+	figcaption {
+		color: var(--light-text-color);
+		text-align: left;
+		font-size: 0.85em;
+		font-style: italic;
+		padding: 0 var(--space-l2) var(--space-l1);
 	}
 	
 	footer {
