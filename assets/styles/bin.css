@@ -98,6 +98,7 @@
 	
 	.post-title {
 		font-size: 1.65em;
+		font-family: 'caslon-graphique';
 		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;

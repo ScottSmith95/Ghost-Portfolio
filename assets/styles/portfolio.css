@@ -67,10 +67,3 @@ footer {
 	padding: var(--space-l2) 0;
 	text-align: center;
 }
-
-@media (min-width: 57.5em) {
-	section,
-	footer {
-		
-	}
-}
