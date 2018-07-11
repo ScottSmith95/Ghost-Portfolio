@@ -40,6 +40,7 @@ section.feature {
 	
 	.item-link {
 		display: inline-block;
+		line-height: 2;
 		
 		&::after {
 			transition: transform 0.3s ease-out;
@@ -47,7 +48,7 @@ section.feature {
 			display: inline-block;
 			position: relative;
 			left: 0;
-			top: 0.625em;
+			top: 0.85em;
 			height: 0.45em;
 			width: 0.45em;
 			transform: rotate(45deg);
