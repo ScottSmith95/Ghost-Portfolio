@@ -10,7 +10,7 @@ section.feature {
 	
 	h2 {
 		font-size: 2em;
-		font-family: 'caslon-graphique';
+		font-family: 'caslon-graphique', var(--font-fam);
 		font-weight: 700;
 		line-height: 1.25;
 		margin: var(--space-l1) 0;

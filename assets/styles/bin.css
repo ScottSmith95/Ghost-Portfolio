@@ -98,7 +98,7 @@
 	
 	.post-title {
 		font-size: 1.65em;
-		font-family: 'caslon-graphique';
+		font-family: 'caslon-graphique', var(--font-fam);
 		font-weight: 700;
 		white-space: nowrap;
 		overflow: hidden;

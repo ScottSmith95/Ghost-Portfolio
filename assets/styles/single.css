@@ -41,7 +41,7 @@
 		}
 		
 		h2 {
-			font-family: 'caslon-graphique';
+			font-family: 'caslon-graphique', var(--font-fam);
 			font-weight: 700;
 			margin-top: var(--space-l2);
 			margin-bottom: 0;
