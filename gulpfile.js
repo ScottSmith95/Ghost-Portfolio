@@ -27,7 +27,7 @@ const processors = [
 	require('postcss-normalize')({forceImport: true}),
 	require('css-mqpacker')({sort: true}),
 	require('autoprefixer'),
-	require('cssnano')({{preset: 'default'})
+	require('cssnano')({preset: 'default'})
 ];
 
 function styles() {
