@@ -27,7 +27,11 @@ const processors = [
 	require('postcss-normalize')({forceImport: true}),
 	require('css-mqpacker')({sort: true}),
 	require('autoprefixer'),
-	require('cssnano')({preset: 'default'})
+	require('cssnano')({
+		preset: ['default', {
+			calc: false,
+			mergeLonghand: false // These conflict with processing nested calc() and env values().
+		}]})
 ];
 
 function styles() {
