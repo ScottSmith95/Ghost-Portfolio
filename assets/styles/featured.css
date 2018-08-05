@@ -76,7 +76,7 @@ section.feature {
 	}
 	
 	.aside-text {
-		color: var(--lightgrey);
+		color: var(--light-text-color);
 	}
 	
 	.aside.one {
