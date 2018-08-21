@@ -1,43 +1,48 @@
 {
-  "name": "portfolio",
-  "version": "2.2.6",
-  "description": "Ghost theme for my personal portfolio.",
-  "author": {
-    "name": "Scott Smith",
-    "email": "mail@ScottHSmith.com",
-    "url": "https://ScottHSmith.com"
-  },
-  "license": "UNLICENSED",
-  "engines": {
-    "ghost": ">=1.23.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ScottSmith95/Ghost-Portfolio.git"
-  },
-  "scripts": {
-    "build": "gulp build"
-  },
-  "devDependencies": {
-    "autoprefixer": "^8.6.5",
-    "css-mqpacker": "^6.0.2",
-    "cssnano": "^4.0.0",
-    "gulp": "^4.0.0",
-    "gulp-postcss": "^7.0.1",
-    "gulp-sourcemaps": "^2.6.4",
-    "gulp-uglify": "^3.0.0",
-    "postcss-custom-properties": "^7.0.0",
-    "postcss-import": "^11.1.0",
-    "postcss-nested": "^3.0.0",
-    "postcss-normalize": "^6.0.0",
-    "uglify-es": "^3.3.9"
-  },
-  "browserslist": [
-    "last 2 versions",
-    "> 2.5% in US",
-    "Firefox ESR"
-  ],
-  "config": {
-    "posts_per_page": 20
-  }
+	"name": "portfolio",
+	"version": "2.2.7",
+	"description": "Ghost theme for my personal portfolio.",
+	"keywords": [
+	"ghost",
+		"theme",
+		"ghost-theme"
+	],
+	"author": {
+		"name": "Scott Smith",
+		"email": "mail@ScottHSmith.com",
+		"url": "https://ScottHSmith.com"
+	},
+	"license": "UNLICENSED",
+	"engines": {
+		"ghost": ">=1.23.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ScottSmith95/Ghost-Portfolio.git"
+	},
+	"scripts": {
+		"build": "gulp build"
+	},
+	"devDependencies": {
+		"autoprefixer": "^8.6.5",
+		"css-mqpacker": "^6.0.2",
+		"cssnano": "^4.0.0",
+		"gulp": "^4.0.0",
+		"gulp-postcss": "^7.0.1",
+		"gulp-sourcemaps": "^2.6.4",
+		"gulp-uglify": "^3.0.0",
+		"postcss-custom-properties": "^7.0.0",
+		"postcss-import": "^11.1.0",
+		"postcss-nested": "^3.0.0",
+		"postcss-normalize": "^6.0.0",
+		"uglify-es": "^3.3.9"
+	},
+	"browserslist": [
+		"last 2 versions",
+		"> 2.5% in US",
+		"Firefox ESR"
+	],
+	"config": {
+		"posts_per_page": 20
+	}
 }
