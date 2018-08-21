@@ -3,7 +3,7 @@
 	"version": "2.2.7",
 	"description": "Ghost theme for my personal portfolio.",
 	"keywords": [
-	"ghost",
+		"ghost",
 		"theme",
 		"ghost-theme"
 	],
@@ -21,12 +21,14 @@
 		"url": "https://github.com/ScottSmith95/Ghost-Portfolio.git"
 	},
 	"scripts": {
-		"build": "gulp build"
+		"build": "gulp build",
+		"test": "gscan ./"
 	},
 	"devDependencies": {
 		"autoprefixer": "^8.6.5",
 		"css-mqpacker": "^6.0.2",
 		"cssnano": "^4.0.0",
+		"gscan": "^2.1.1",
 		"gulp": "^4.0.0",
 		"gulp-postcss": "^7.0.1",
 		"gulp-sourcemaps": "^2.6.4",
