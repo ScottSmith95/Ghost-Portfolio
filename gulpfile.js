@@ -2,10 +2,10 @@
 
 const gulp       = require( 'gulp' );
 const postcss    = require( 'gulp-postcss' );
-// Use uglify-es minifier with gulp-uglify for ES2015 support.
+// Use terser minifier with gulp-uglify for ES2015 support.
 const composer   = require( 'gulp-uglify/composer' );
-const uglifyes   = require( 'uglify-es' );
-const minify     = composer( uglifyes, console );
+const terser     = require( 'terser' );
+const minify     = composer( terser, console );
 const sourcemaps = require( 'gulp-sourcemaps' );
 
 const paths = {
@@ -23,7 +23,7 @@ const paths = {
 const processors = [
 	require( 'postcss-import' ),
 	require( 'postcss-nested' ),
-	require( 'postcss-custom-properties' )( { warnings: true } ),
+	require( 'postcss-custom-properties' ),
 	require( 'postcss-normalize' )( { forceImport: true } ),
 	require( 'css-mqpacker' )( { sort: true } ),
 	require( 'autoprefixer' ),
