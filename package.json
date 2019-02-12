@@ -25,9 +25,9 @@
 		"test": "gscan ./"
 	},
 	"devDependencies": {
-		"autoprefixer": "^9.4.3",
+		"autoprefixer": "^9.4.7",
 		"css-mqpacker": "^7.0.0",
-		"cssnano": "^4.1.8",
+		"cssnano": "^4.1.9",
 		"gscan": "^2.2.1",
 		"gulp": "^4.0.0",
 		"gulp-postcss": "^8.0.0",
@@ -37,7 +37,7 @@
 		"postcss-import": "^12.0.1",
 		"postcss-nested": "^4.1.1",
 		"postcss-normalize": "^7.0.1",
-		"terser": "~3.13.1"
+		"terser": "^3.16.1"
 	},
 	"browserslist": [
 		"last 2 versions",
